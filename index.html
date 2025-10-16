@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>M Smart Aircon — Premium</title>
+<meta name="description" content="M Smart Aircon — Sales, Service & Repair of ACs, Refrigerators, Coolers & Home Appliances. Mitrapur Bus Stand, Birbhum, West Bengal." />
+<link rel="icon" href="images/favicon.png" />
+<style>
+:root{
+  --blue:#0b66c3;
+  --dark:#07324a;
+  --light:#f6fbff;
+  --glass: rgba(255,255,255,0.6);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--light),#ffffff);color:var(--dark);-webkit-font-smoothing:antialiased}
+.header{background:linear-gradient(135deg,var(--blue),#3aa0ff);color:white;padding:48px 20px;text-align:center;position:relative;overflow:hidden}
+.logo{display:flex;align-items:center;gap:14px;justify-content:center}
+.logo img{height:72px;width:auto;border-radius:8px;box-shadow:0 8px 30px rgba(11,38,68,0.18)}
+.logo h1{margin:0;font-size:2.1rem;letter-spacing:0.6px}
+.tag{margin-top:8px;opacity:0.95}
+
+.container{max-width:1100px;margin:28px auto;padding:0 20px;display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:start}
+.card{background:linear-gradient(180deg,white,#fbfdff);border-radius:14px;padding:22px;box-shadow:0 10px 30px rgba(11,38,68,0.07)}
+
+/* hero */
+.hero{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:18px;border-radius:12px;background:linear-gradient(90deg,rgba(255,255,255,0.4),rgba(255,255,255,0.2));backdrop-filter: blur(6px)}
+.hero-left{flex:1}
+.hero h2{margin:0;color:var(--dark);font-size:1.6rem}
+.hero p{margin:8px 0 0;color:#33556f}
+.hero-cta{margin-top:12px;display:flex;gap:10px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:11px 14px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(11,38,68,0.08)}
+.btn-call{background:white;color:var(--blue);border:2px solid rgba(11,102,195,0.08)}
+.btn-ws{background:linear-gradient(90deg,#25d366,#1ebd5b);color:white}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.service{background:linear-gradient(180deg,#ffffff,#f3fbff);padding:14px;border-radius:10px;text-align:center;transition:transform .35s,box-shadow .35s}
+.service:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(11,38,68,0.09)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+/* map */
+.map iframe{width:100%;height:260px;border:0;border-radius:10px}
+
+/* floating */
+.float-wrap{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:12px;z-index:999}
+.fbtn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:white;font-size:22px;box-shadow:0 14px 40px rgba(11,38,68,0.12)}
+.fws{background:#25d366}
+.fcall{background:var(--blue)}
+
+/* right column quick info */
+.right .small{display:flex;align-items:center;gap:10px;margin:10px 0;padding:10px;border-radius:8px;background:linear-gradient(180deg,#fbfeff,#ffffff)}
+
+/* footer */
+footer{max-width:1100px;margin:28px auto;padding:18px 20px;text-align:center;color:#4b6b86;font-size:0.95rem}
+
+/* responsive */
+@media (max-width:960px){
+  .container{grid-template-columns:1fr; padding:0 16px}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .gallery img{height:100px}
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="M Smart Aircon Logo" id="logoImg" onerror="this.style.display='none'">
+      <div>
+        <h1>M Smart Aircon</h1>
+        <div class="tag">We Sell & Repair ACs, Refrigerators, Coolers & Home Appliances</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="hero">
+        <div class="hero-left">
+          <h2>Reliable sales & trusted doorstep repairs</h2>
+          <p>Fast installation, genuine parts, and service at your home across Birbhum.</p>
+          <div class="hero-cta">
+            <a class="btn btn-ws" href="https://wa.me/919564060532" target="_blank">💬 WhatsApp</a>
+            <a class="btn btn-call" href="tel:+919564060532">📞 Call Now</a>
+            <a class="btn" href="#contact" style="background:linear-gradient(90deg,var(--blue),#3aa0ff);color:white">Get Directions</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- small animated badge -->
+          <div style="background:rgba(255,255,255,0.15);padding:10px;border-radius:10px;color:#fff;font-weight:700;backdrop-filter:blur(6px);">Open: Mon-Sat • 9AM-7PM</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:18px">Our Services</h3>
+      <div class="services">
+        <div class="service">AC Sales & Installation</div>
+        <div class="service">Refrigerator & Cooler Sales</div>
+        <div class="service">Home Appliance Repair</div>
+        <div class="service">AC & Fridge Repair</div>
+        <div class="service">Maintenance Contracts</div>
+        <div class="service">Home Service (Doorstep)</div>
+      </div>
+
+      <h3 style="margin-top:18px">Gallery</h3>
+      <div class="gallery" id="gallery">
+        <img src="images/sample1.jpg" alt="sample">
+        <img src="images/sample2.jpg" alt="sample">
+        <img src="images/sample3.jpg" alt="sample">
+      </div>
+
+      <h3 id="contact" style="margin-top:18px">Contact Us</h3>
+      <p><strong>Address:</strong> Mitrapur Bus Stand, Birbhum, West Bengal</p>
+      <p><strong>Phone:</strong> <a href="tel:+919564060532">+91 9564060532</a> • <strong>Email:</strong> <a href="mailto:map98480@gmail.com">map98480@gmail.com</a></p>
+    </section>
+
+    <aside class="right card">
+      <h3>Find Us</h3>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=M+Smart+Aircon,+Mitrapur+Bus+Stand,+Birbhum,+West+Bengal&output=embed" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <div class="small" style="margin-top:14px">
+        <div style="width:44px;height:44px;border-radius:8px;background:linear-gradient(90deg,var(--blue),#3aa0ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:800">M</div>
+        <div>
+          <div style="font-weight:700">M Smart Aircon</div>
+          <div style="font-size:0.9rem;color:#4b6b86">Mitrapur Bus Stand, Birbhum</div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <a style="display:inline-block;margin-right:8px;text-decoration:none" class="btn btn-ws" href="https://wa.me/919564060532" target="_blank">💬 WhatsApp</a>
+        <a style="display:inline-block;text-decoration:none" class="btn btn-call" href="tel:+919564060532">📞 Call</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    © 2025 M Smart Aircon • Mitrapur Bus Stand, Birbhum
+  </footer>
+
+  <div class="float-wrap">
+    <a class="fbtn fws" href="https://wa.me/919564060532" target="_blank" title="WhatsApp">💬</a>
+    <a class="fbtn fcall" href="tel:+919564060532" title="Call">📞</a>
+  </div>
+
+<script>
+// simple entrance animations
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.service').forEach((el,i)=>{
+    el.style.opacity=0; el.style.transform='translateY(10px)';
+    setTimeout(()=>{ el.style.transition='all .6s cubic-bezier(.2,.9,.3,1)'; el.style.opacity=1; el.style.transform='translateY(0)'; }, 120*i);
+  });
+});
+</script>
+</body>
+</html>
