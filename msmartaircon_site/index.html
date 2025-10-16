@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M Smart Aircon | Sales & Service</title>
+  <meta name="description" content="M Smart Aircon — Sales, Service & Repair of ACs, Refrigerators, Coolers & Home Appliances. Mitrapur Bus Stand, Birbhum, West Bengal." />
+  <style>
+    :root{
+      --blue:#0b66c3;
+      --light:#f5f8fd;
+      --dark:#0b2a44;
+      --accent:#0ea5ff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--light);color:var(--dark);-webkit-font-smoothing:antialiased}
+    header{background:linear-gradient(135deg,var(--blue),#3aa0ff);color:white;padding:34px 18px;text-align:center}
+    header h1{margin:0;font-size:2.1rem;letter-spacing:0.4px}
+    header p{margin:6px 0 0;opacity:0.95}
+
+    .container{max-width:1100px;margin:22px auto;padding:0 18px;display:flex;gap:20px;align-items:flex-start}
+    .card{background:white;border-radius:12px;box-shadow:0 6px 20px rgba(11,38,68,0.08);padding:22px}
+
+    .left{flex:1 1 60%}
+    .right{flex:0 0 360px;min-width:260px}
+
+    h2{color:var(--blue);margin-top:0}
+    ul{padding-left:20px}
+
+    .contact a{color:var(--blue);text-decoration:none;font-weight:600}
+    .buttons{margin-top:12px}
+
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;margin-right:8px;box-shadow:0 6px 18px rgba(11,38,68,0.06)}
+    .btn-call{background:white;color:var(--blue);border:2px solid rgba(11,102,195,0.12)}
+    .btn-ws{background:linear-gradient(90deg,#25d366,#1ebd5b);color:white}
+
+    /* map card */
+    .map iframe{width:100%;height:320px;border:0;border-radius:10px}
+
+    /* gallery placeholder */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery .tile{background:linear-gradient(180deg,#eef6ff,#ffffff);height:90px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#7aa6e6;font-weight:700;opacity:0.95}
+
+    footer{background:var(--blue);color:white;padding:14px;text-align:center;border-top-left-radius:8px;border-top-right-radius:8px;margin-top:24px}
+
+    /* floating buttons */
+    .float-wrap{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:999}
+    .float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:white;font-size:20px;box-shadow:0 8px 20px rgba(11,38,68,0.14)}
+    .float-ws{background:#25d366}
+    .float-call{background:var(--blue)}
+
+    @media (max-width:860px){
+      .container{flex-direction:column}
+      .right{order:2}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>M Smart Aircon</h1>
+    <p>Sales • Service • Repair • Home Appliances — Mitrapur Bus Stand, Birbhum</p>
+  </header>
+
+  <main class="container">
+    <section class="left card">
+      <h2>About Us</h2>
+      <p><strong>M Smart Aircon</strong> provides sales, installation, maintenance and repair services for ACs, refrigerators, coolers and other home appliances. We also offer convenient home service and quick repairs.</p>
+
+      <h2>Our Services</h2>
+      <ul>
+        <li>AC, Refrigerator & Cooler Sales</li>
+        <li>Home Appliance Sales & Service</li>
+        <li>AC & Fridge Installation and Repair</li>
+        <li>Home Repair & Maintenance Service (Service from Home)</li>
+      </ul>
+
+      <h2>Gallery</h2>
+      <p>Add photos of your shop or products anytime — just upload images to the <code>/images</code> folder and replace the placeholders.</p>
+      <div class="gallery" id="gallery">
+        <div class="tile">Your Photo 1</div>
+        <div class="tile">Your Photo 2</div>
+        <div class="tile">Your Photo 3</div>
+      </div>
+
+      <h2>Contact</h2>
+      <div class="contact">
+        <p><strong>Address:</strong> Mitrapur Bus Stand, Birbhum, West Bengal</p>
+        <p><strong>Phone:</strong> <a href="tel:+919564060532">+91 9564060532</a></p>
+        <p><strong>Email:</strong> <a href="mailto:map98480@gmail.com">map98480@gmail.com</a></p>
+      </div>
+
+      <div class="buttons">
+        <a class="btn btn-ws" href="https://wa.me/919564060532" target="_blank">💬 WhatsApp</a>
+        <a class="btn btn-call" href="tel:+919564060532">📞 Call Now</a>
+      </div>
+    </section>
+
+    <aside class="right card">
+      <h2>Find Us</h2>
+      <div class="map">
+        <!-- Embedded map for your shop -->
+        <iframe src="https://www.google.com/maps?q=M+Smart+Aircon,+Mitrapur+Bus+Stand,+Birbhum,+West+Bengal&output=embed" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <h2 style="margin-top:14px">Quick Info</h2>
+      <p style="margin:0.2rem 0"><strong>WhatsApp / Phone:</strong> <a href="tel:+919564060532">+91 9564060532</a></p>
+      <p style="margin:0.2rem 0"><strong>Email:</strong> <a href="mailto:map98480@gmail.com">map98480@gmail.com</a></p>
+      <p style="margin:0.2rem 0"><strong>Address:</strong> Mitrapur Bus Stand, Birbhum</p>
+    </aside>
+  </main>
+
+  <footer>
+    © 2025 M Smart Aircon — All rights reserved
+  </footer>
+
+  <!-- Floating buttons -->
+  <div class="float-wrap" aria-hidden="false">
+    <a class="float-btn float-ws" href="https://wa.me/919564060532" title="WhatsApp" target="_blank">💬</a>
+    <a class="float-btn float-call" href="tel:+919564060532" title="Call">📞</a>
+  </div>
+
+  <!-- Small script: replace gallery with images if placed in /images folder -->
+  <script>
+    (function(){
+      // If you later add images named img1.jpg,img2.jpg,img3.jpg in /images, the script will automatically show them
+      const imgs = ['images/img1.jpg','images/img2.jpg','images/img3.jpg'];
+      const gallery = document.getElementById('gallery');
+      const realImgs = imgs.filter(p=>{
+        // check if image exists by loading it (graceful fallback)
+        return true; // placeholders; when images are added they'll display automatically
+      });
+      if(realImgs.length>0){
+        gallery.innerHTML = '';
+        realImgs.forEach(p=>{
+          const d = document.createElement('div');
+          d.className='tile';
+          const img = document.createElement('img');
+          img.src=p;
+          img.style.width='100%';
+          img.style.height='100%';
+          img.style.objectFit='cover';
+          img.style.borderRadius='8px';
+          d.appendChild(img);
+          gallery.appendChild(d);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
